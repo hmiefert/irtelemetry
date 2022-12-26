@@ -1,0 +1,15 @@
+{
+  "name": "irtelemetry",
+  "version": "0.0.1",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "hmiefert",
+  "license": "MIT",
+  "dependencies": {
+    "node-irsdk-2021": "^0.0.1"
+  }
+}
