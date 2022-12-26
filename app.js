@@ -17,10 +17,10 @@ iracing.on('Telemetry', function (evt) {
     console.log(evt)
 })
 
-  iracing.on('SessionInfo', function (evt) {
+iracing.on('SessionInfo', function (evt) {
     console.log(evt)
 })
 
-  iracing.on('update', function (evt) {
+iracing.on('update', function (evt) {
     console.log(evt)
 })
