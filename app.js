@@ -1,16 +1,19 @@
 const irsdk = require('node-irsdk-2021')
-const iracing = irsdk.init({telemetryUpdateInterval: 5000})
-
-iracing.on('Connected', function (evt) {
-    console.log(evt)
+const iracing = irsdk.init({
+    telemetryUpdateInterval: 20000,
+    sessionInfoUpdateInterval: 10000
 })
 
-iracing.on('Disconnected', function (evt) {
-    console.log(evt)
+iracing.on('Connected', function () {
+    console.log('iRacing telemetry connected')
 })
 
-iracing.on('TelemetryDescription', function (data) {
-    console.log(data)
+iracing.on('Disconnected', function () {
+    console.log('iRacing telemetry disconnected')
+})
+
+iracing.on('TelemetryDescription', function (evt) {
+    console.log(evt)
 })
 
 iracing.on('Telemetry', function (evt) {
