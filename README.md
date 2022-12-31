@@ -9,5 +9,4 @@ npm install
 npm run start
 ```
 # screenshot
-# screenshots
 ![Screenshot](https://github.com/hmiefert/irtelemetry/blob/main/screenshot.png?raw=true)
