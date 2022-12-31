@@ -1,4 +1,4 @@
-const irsdk = require('node-irsdk-2021')
+const irsdk = require('node-irsdk-2023')
 const iracing = irsdk.init({
     telemetryUpdateInterval: 20000,
     sessionInfoUpdateInterval: 10000
